@@ -1,0 +1,11 @@
+---
+- name: enable repositories
+  package:
+    name:
+      - epel-release
+      - http://rpms.remirepo.net/enterprise/remi-release-7.rpm
+
+- name: install php packages
+  package:
+    name: "{{ php_packages }}"
+    state: present

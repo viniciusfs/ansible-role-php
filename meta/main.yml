@@ -1,0 +1,17 @@
+---
+galaxy_info:
+  author: Vinícius Figueiredo
+  description: Installs PHP 7 from remi repositories on CentOS 7
+  license: MIT
+
+  platforms:
+    - name: EL
+      versions:
+        - 7
+
+  galaxy_tags:
+    - centos
+    - development
+    - php
+
+dependencies: []
