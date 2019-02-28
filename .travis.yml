@@ -2,17 +2,17 @@
 sudo: required
 language: python
 services:
-- docker
+  - docker
 
 before_install:
-- sudo apt-get -qq update
-- sudo apt-get install -o Dpkg::Options::="--force-confold" --force-yes -y docker-ce
+  - sudo apt-get -qq update
+  - sudo apt-get install -o Dpkg::Options::="--force-confold" --force-yes -y docker-ce
 
 install:
-- pip install molecule docker-py
+  - pip install molecule docker-py
 
 script:
-- molecule test -d docker
+  - molecule test -d docker
 
 notifications:
   webhooks: https://galaxy.ansible.com/api/v1/notifications/
