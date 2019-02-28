@@ -1,5 +1,7 @@
 # Ansible role: PHP 7
 
+[![Build Status](https://travis-ci.org/viniciusfs/ansible-role-php.svg?branch=master)](https://travis-ci.org/viniciusfs/ansible-role-php)
+
 Installs PHP 7 from remi repositories on RHEL/CentOS systems.
 
 
